@@ -1,0 +1,124 @@
+.activity-sec {
+	.middle {
+		.risk-meter {
+			position: relative;
+			width: 180px;
+			height: 100%;
+			.meter-bg {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+			}
+			.meter {
+				position: absolute;
+				left: 108px;
+				top: 12px;
+				-ms-transform: rotate(20deg); /* IE 9 */
+				transform: rotate(46deg);
+			}
+		}
+	}
+	.card-lr {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		overflow-x: hidden;
+		height: 100%;
+		h2 {
+			font-size: 22px;
+			margin: 0;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		h1 {
+			font-weight: 900;
+			font-size: 32px;
+			text-align: center;
+			margin: 0;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		.gradient-bg {
+			width: 90%;
+			button {
+				width: 100%;
+				border-radius: 4px;
+				cursor: default !important;
+				color: #fff;
+				padding: 10px;
+				&:hover {
+					border-radius: 4px !important;
+				}
+			}
+		}
+	}
+	.bottom {
+		padding: 15px;
+		.card-lr {
+			box-shadow: 0 0 4px 2px #6d6797ab;
+			.history-btn {
+				width: 100%;
+				text-align: center;
+				margin-top: 15px;
+				margin-bottom: 30px;
+				button {
+					background: transparent;
+					border: 2px solid #6d6797;
+					border-radius: 6px;
+					border-top-left-radius: 30px;
+					border-bottom-right-radius: 30px;
+					padding: 13px 30px;
+					color: #fff;
+				}
+			}
+			.history-table {
+				max-width: 682px;
+				width: 100%;
+				overflow: auto;
+				table{		
+					width: 100%;			
+					thead {
+						th {
+							color: var(--primary-color) !important;
+							p{
+								word-break:keep-all;
+    // white-space: normal;
+	// width: 100%;
+							}
+						}
+					}
+					tbody {
+						height: 250px !important;
+					}
+				}
+				
+			}
+		}
+	}
+}
+
+
+@media (max-width: 992px) {
+	.activity-sec{
+		.top{
+			.card-lr{
+				height: 308px;
+			}
+		}
+	}
+}
+
+@media (max-width: 595px) {
+	.activity-sec{
+		.card-lr{
+			h1{
+				font-size: 20px !important;
+			}
+			h2{
+				font-size: 14px !important;
+			}
+		}	
+	}
+}

@@ -1,0 +1,43 @@
+.accountpage-sec {
+	.row.top {
+		.card {
+			display: flex;
+			flex-direction: column;
+			padding: 15px 10px;
+			height: 150px;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+	.bottom {
+		.card {
+			justify-content: space-between !important;
+			border-radius: 10px !important;
+			.single-row {
+				padding: 10px 30px;
+				.title-body1 {
+					font-weight: 700;
+					font-size: 1rem;
+					color: #fff;
+					line-height: 1;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 992px) {
+	.card-table {
+		max-width: 100%;
+		.single-row {
+			padding: 10px !important;
+			.title-body1 {
+				font-weight: 400 !important;
+				font-size: 14px !important;
+			}
+			.title-h5 {
+				font-weight: 600 !important;
+				font-size: 1.1rem !important;
+			}
+		}
+	}
+}
